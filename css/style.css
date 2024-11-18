@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Основні стилі */
+body,
+html {
+  min-height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 100%;
+  overflow-x: hidden;
+  color: #333;
+  background: rgba(255, 255, 255, 0.308) url('../images/background.jpg') no-repeat center center / cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* normalize */
+
+.main-content {
+  padding: 100px 20px 100px;
+  background-color: #ffffff44;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container-title-article {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f0a93;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 45px;
+}
+
+.article-text::first-letter {
+  font-size: 1.2em;
+  color: #01509f;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+/* Загальні стилі для всіх сторінок */
+
+ul {
+  position: static;
+  list-style: none;
+}
+
+nav ul {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* display */
+section {
+  margin-bottom: 30px;
+  border: 5px solid #000000;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.box {
+  background: #f4f4f434;
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+/* display 2*/
+.block-example .box {
+  display: block;
+  width: 100%;
+}
+
+.inline-example .box {
+  display: inline;
+  width: auto;
+}
+
+.flex-example .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+}
+
+/* box-sizing */
+.box-sizing-example .box {
+  width: 150px;
+  height: 100px;
+  border: 5px solid #333;
+  padding: 10px;
+  margin: 5px;
+}
+
+.box-sizing-example .content-box {
+  box-sizing: content-box;
+}
+
+.box-sizing-example .border-box {
+  box-sizing: border-box;
+}
+
+#shadow-host-companion {
+  display: none !important;
+}
+
+/* float */
+.float-container {
+  border: 1px solid #000000;
+  padding: 100px 20px;
+  background-color: #ffffff44;
+  min-height: 100vh;
+  max-width: 1280px;
+  justify-content: center;
+  margin: 0 auto;
+  display: contents;
+  align-items: center;
+}
+
+.float-container div {
+  width: 50%;
+  padding: 10px;
+  background: #ffffff45;
+  margin: 5px;
+  border: 1px solid #000000;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+/* overflow */
+.overflow-container {
+  width: 90%;
+  height: 200px;
+  border: 2px solid #000000;
+  margin: 20px auto;
+  background-color: #00000025;
+  padding: 10px;
+  overflow: scroll;
+  /* Можна змінювати на hidden, scroll, або visible */
+}
+
+/* Для підтримки в Firefox */
+.overflow-container {
+  scrollbar-width: thin;
+  /* Тонкий скрол */
+  scrollbar-color: #0000003e #ffffff4d;
+  /* Колір ползунка і треку */
+}
+
+
+/*Positioning Experiment */
+.static-box {
+  position: static;
+  background-color: #ffffff91;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.relative-box {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-color: #ffffff66;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #ffffff79;
+  padding: 10px;
+  width: 200px;
+}
+
+.fixed-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #d9f7f3;
+  padding: 10px;
+  width: 150px;
+  z-index: 1000;
+  border: 2px solid #000000;
+}
+
+.sticky-box {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff69;
+  padding: 10px;
+  border: 2px solid #000000;
+}

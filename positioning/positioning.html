@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Elements</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="main-content">
+
+    <div class="container">
+
+      <h1>Positioning Experiment</h1>
+
+      <section>
+        <h2>Static</h2>
+        <div class="container">
+          <div class="static-box">
+            Цей елемент має позицію <strong>static</strong> (позиція за замовчуванням). Він слідує за потоком документа.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Relative</h2>
+        <div class="container">
+          <div class="relative-box">
+            Цей елемент має позицію <strong>relative</strong>. Його положення зміщується на
+            <code>top: 10px; left: 10px;</code>, але він залишається в основному потоці документа.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Sticky</h2>
+        <div class="container">
+          <div class="sticky-box">
+            Цей елемент має позицію <strong>sticky</strong>. Він залишається в потоці документа, але фіксується на
+            вершині, коли ви прокручуєте до нього.
+          </div>
+          <p>Прокрутіть цю секцію, щоб побачити, як <strong>sticky</strong> працює.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Absolute</h2>
+        <div class="container">
+          <div class="absolute-box">
+            Цей елемент має позицію <strong>absolute</strong>. Його положення відноситься до найближчого батьківського
+            елемента з позицією, що не є <code>static</code>.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Fixed</h2>
+        <div class="fixed-box">
+          Цей елемент має позицію <strong>fixed</strong>. Він фіксується відносно вікна браузера і не змінює свого
+          положення при прокрутці.
+        </div>
+        <div class="container">
+          <p>Прокрутіть цю сторінку, щоб побачити, як цей елемент залишається на своєму місці.</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -30,6 +30,21 @@ h2 {
   margin: 20px 0;
 }
 
+
+/* Block and inline elements */
+.block {
+  background-color: #ffffff7d;
+  border: 2px solid #000000;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.inline {
+  background-color: #ffffff70;
+  border: 1px solid #00000076;
+  padding: 5px;
+}
+
 /* normalize */
 
 .main-content {
